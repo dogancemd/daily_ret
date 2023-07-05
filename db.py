@@ -1,6 +1,5 @@
 import pandas as pd
 import sqlite3 as sq
-import db_dtypes
 work_dir="/Users/dogancemd/Documents/"
 table_name="game_analytics"
 def create_table():
