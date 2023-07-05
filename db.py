@@ -16,4 +16,7 @@ def daykretention(k):
 
 
 if __name__=="__main__":
-    print(daykretention(6))
+    conn = sq.connect(f"{work_dir}my_db.db")
+    cur = conn.cursor()
+    asd = int((cur.execute(f"Select Count(*) FROM (SELECT DISTINCT days_elapsed FROM  '{table_name}')").fetchone())[0])
+    print(asd)
