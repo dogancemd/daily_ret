@@ -1,6 +1,6 @@
 import pandas as pd
 import sqlite3 as sq
-work_dir="/Users/dogancemd/Documents/"
+work_dir="./"
 table_name="game_analytics"
 def create_table():
     conn = sq.connect(f"{work_dir}my_db.db")
